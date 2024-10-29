@@ -1,3 +1,5 @@
+
+//FIGURE OUT HOW TO ADD 3 LINKS HERE, ADD ONCLICK EVENT LISTENER
 var linkElement = document.getElementById('https://google.com');
 document.createElement('a')
 i = 0
