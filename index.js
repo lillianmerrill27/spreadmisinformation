@@ -15,5 +15,5 @@ if( Math.random() < 0.20 ){
 }
 if( Math.random() < 0.80 ){
 	i = i + 1
-    console.log("eh"
+    console.log("eh")
 }
