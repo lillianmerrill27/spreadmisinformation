@@ -29,7 +29,7 @@ if( Math.random() >= 0.41 ){
 }
 }
 function buttonLog() {
-	buttonLogValue += buttonClick;
+
 }
 var body = document.body;
 var hover_element = document.getElementById("hero_hover_animation");
