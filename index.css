@@ -1,14 +1,23 @@
 .btn1layout{
     float: right;
-    color: aliceblue;
+    font-family: cursive;
+    font-size: 50px;
+    color: black;
+    border-color: black;
     width: 200px;
     height: 75px;
     margin: 30px;
 }
 .btn2layout{
     float: right;
-    color: gray;
+    border-color: blue;
+    color: blue;
     width: 150px;
     height: 50px;
     margin: 25px;
+}
+.buttons{
+ display: flex; 
+ align-content: center;
+ justify-content: center;
 }
