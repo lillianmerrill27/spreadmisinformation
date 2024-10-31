@@ -23,13 +23,23 @@ if( Math.random() <= 0.05 ){
 }
 if( Math.random() >= 0.41 ){
 	i = i + 1
-    console.log("eh")			
-	documentEl.innertext = ("eh")
+    console.log("eh");			
+	documentEl.innertext = ("eh");
 	buttonClick.innerHtml = 'eh';
 }
 }
 function buttonLog() {
-
+	buttonLogValue += buttonClick;
 }
+var body = document.body;
+var hover_element = document.getElementById("hero_hover_animation");
+hover_element.addEventListener("mouseover", function(){
+	body.style.backgroundColor = '#ffd66b'
+});
+hover_element.addEventListener("mouseout", function(){
+	body.style.backgroundColor = '#fff';
+});
 //const innerTextOutput = document.getElementById("innerTextOutput");
 //innerTextOutput.value = source.innerText;
+
+

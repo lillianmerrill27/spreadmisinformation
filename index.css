@@ -3,7 +3,7 @@
     font-family: cursive;
     font-size: 50px;
     color: black;
-    border-color: black;
+    border-color: rgb(224, 18, 18);
     width: 200px;
     height: 75px;
     margin: 30px;
@@ -20,4 +20,8 @@
  display: flex; 
  align-content: center;
  justify-content: center;
+}
+body{
+    transition: background-color 
+    0.5s ease-in-out;
 }
