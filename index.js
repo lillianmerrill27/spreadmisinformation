@@ -29,7 +29,7 @@ if( Math.random() >= 0.41 ){
 }
 }
 function buttonLog() {
-
+buttonLogValue += buttonClick
 }
 //const innerTextOutput = document.getElementById("innerTextOutput");
 //innerTextOutput.value = source.innerText;
