@@ -1,6 +1,7 @@
 
 //FIGURE OUT HOW TO ADD 3 LINKS HERE, ADDING ONCLICK EVENT LISTENER BELOW \/
 let buttonClick = document.getElementById("clickmebtn1")
+let buttonLog = document.getElementById("log-rolls")
 //var linkElement = document.getElementById('https://google.com');
 //document.createElement('a')
 
