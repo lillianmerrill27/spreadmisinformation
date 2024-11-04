@@ -1,7 +1,7 @@
 .btn1layout{
     float: right;
     font-family: cursive;
-    font-size: 50px;
+    font-size: 40px;
     color: black;
     border-color: rgb(224, 18, 18);
     width: 200px;
@@ -25,3 +25,4 @@ body{
     transition: background-color 
     0.5s ease-in-out;
 }
+
