@@ -1,4 +1,4 @@
-.btn1layout{
+.btn1layout {
     float: right;
     font-family: cursive;
     font-size: 40px;
@@ -8,7 +8,8 @@
     height: 75px;
     margin: 30px;
 }
-.btn2layout{
+
+.btn2layout {
     float: right;
     border-color: blue;
     color: blue;
@@ -16,13 +17,46 @@
     height: 50px;
     margin: 25px;
 }
-.buttons{
- display: flex; 
- align-content: center;
- justify-content: center;
-}
-body{
-    transition: background-color 
-    0.5s ease-in-out;
+
+.buttons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
+body {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.button {
+    appearance: auto;
+    text-rendering: auto;
+    color: black;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+.button:active {
+    
+}

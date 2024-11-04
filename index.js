@@ -1,4 +1,4 @@
-//FIGURE OUT HOW TO ADD 3 LINKS HERE, ADDING ONCLICK EVENT LISTENER BELOW \/
+//FIGURE OUT HOW TO ADD 3 LINKS HERE (POSSIBLY), ADDING ONCLICK EVENT LISTENER BELOW \/
 let buttonClick = document.getElementById("clickmebtn1")
 let buttonLog = document.getElementById("log-rolls")
 //var linkElement = document.getElementById('https://google.com');
@@ -6,7 +6,7 @@ let buttonLog = document.getElementById("log-rolls")
 
 i = 0
 
-function buttonClick() {
+function buttonClickHandler() {
 if( Math.random() <= 0.04 ){
    i = i + 5;
    console.log("JACKPOT");
@@ -41,5 +41,10 @@ hover_element.addEventListener("mouseout", function(){
 });
 //const innerTextOutput = document.getElementById("innerTextOutput");
 //innerTextOutput.value = source.innerText;
-
+//const button = document.querySelector("button");
+//count = 0
+//button.addEventListener("click", (event) => {
+	//button.textContent = `Click count: ${event.detail}`;
+	//count += 1;
+ // });
 
