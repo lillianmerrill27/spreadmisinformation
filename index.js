@@ -1,35 +1,38 @@
 //FIGURE OUT HOW TO ADD 3 LINKS HERE (POSSIBLY), ADDING ONCLICK EVENT LISTENER BELOW \/
 let buttonClick = document.getElementById("clickmebtn1")
 let buttonLog = document.getElementById("log-rolls")
+let countEl = document.getElementById("count-el")
+let saveEl
 //var linkElement = document.getElementById('https://google.com');
 //document.createElement('a')
 
-i = 0
+count = 0
 
 function buttonClickHandler() {
 if( Math.random() <= 0.04 ){
-   i = i + 5;
-   console.log("JACKPOT");
-	 documentEl.innerText("JACKPOT");
-	buttonClick.innerHtml = "JACKPOT";
+   count = count + 5;
+   documentEl.innerText = ("JACKPOT");
+	console.log("JACKPOT");
+	countEl.textContent = count;
 //linkElement.href = https://google.com;
 
 }
 if( Math.random() <= 0.05 ){
-	i = i + 2;
+	count = count + 2;
     console.log("epic");
 	 documentEl.innerText = ("epic");
-	buttonClick.innerHtml = 'epic';
+	countEl.textContent = count;
 }
 if( Math.random() >= 0.41 ){
-	i = i + 1
+	count = count + 1
     console.log("eh");			
 	documentEl.innertext = ("eh");
-	buttonClick.innerHtml = 'eh';
+	countEl.textContent = count;
 }
 }
 function buttonLog() {
-
+let countStr = count + " - "
+	
 }
 var body = document.body;
 var hover_element = document.getElementById("hero_hover_animation");
