@@ -31,7 +31,7 @@ function buttonClickHandler() {
 	}
 
 }
-function buttonLog() {
+function logAction() {
 	let countStr = count + " - ";
 	saveEl.textContent += countStr;
 	countEl.textContent = 0;

@@ -1,7 +1,6 @@
 .btn1layout {
-    float: right;
     font-family: cursive;
-    font-size: 40px;
+    font-size: 35px;
     color: black;
     border-color: rgb(224, 18, 18);
     width: 200px;
@@ -10,12 +9,12 @@
 }
 
 .btn2layout {
-    float: right;
     border-color: blue;
     color: blue;
     width: 150px;
     height: 50px;
     margin: 25px;
+    font-size: 30px;
 }
 
 .buttons {
@@ -54,12 +53,16 @@ body {
 }
 
 .button:hover {
-    background-color: grey;
+    background-color: rgb(155, 219, 209);
 }
 
 .button:active {
-    
+    background-color:rgb(96, 134, 129)
 }
 .points{
-float:right;
+float:left;
+}
+
+.quotes {
+   font-style: italic; 
 }
