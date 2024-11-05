@@ -2,7 +2,7 @@
 let buttonClick = document.getElementById("clickmebtn1")
 let buttonLog = document.getElementById("log-rolls")
 let countEl = document.getElementById("count-el")
-let saveEl
+let saveEl = document.getElementById("save-el")
 //var linkElement = document.getElementById('https://google.com');
 //document.createElement('a')
 
@@ -31,7 +31,10 @@ if( Math.random() >= 0.41 ){
 }
 }
 function buttonLog() {
-let countStr = count + " - "
+let countStr = count + " - ";
+	saveEl.textContent += countStr;
+	countEl.textContent = 0;
+	count = 0;
 	
 }
 var body = document.body;
