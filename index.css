@@ -9,7 +9,20 @@
     height: 75px;
     margin: 30px;
 }
-
+   .leekh1{
+    display:flex;
+    transform: translate(25px,15px);
+   } 
+.leekh1{
+    font-size: 50px;
+}
+.logo{
+    height: 100px;
+    display: flex;
+    float:left;
+    transform: translate(15px,15px);
+    
+}
 .btn2layout {
 
     border-color: blue;
@@ -59,19 +72,12 @@ body {
 }
 
 .button:active {
-    
+  color: blueviolet;
 }
 .points{
 float:left;
 }
-a:hover{
-  background-color: aquamarine;
-}
 
-
-
-
-Maybe
 a:link{
  color:orchid;
   font-size: 18px;
@@ -89,3 +95,6 @@ a:active{
   background-color: orchid;
 }
 
+h1 {
+    font-size: large;
+}
