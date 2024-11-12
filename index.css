@@ -1,23 +1,91 @@
-.btn1layout{
-    float: right;
+
+.btn1layout {
+
     font-family: cursive;
-    font-size: 50px;
+    font-size: 40px;
     color: black;
-    border-color: black;
+    border-color: rgb(224, 18, 18);
     width: 200px;
     height: 75px;
     margin: 30px;
 }
-.btn2layout{
-    float: right;
+
+.btn2layout {
+
     border-color: blue;
     color: blue;
     width: 150px;
     height: 50px;
     margin: 25px;
 }
-.buttons{
- display: flex; 
- align-content: center;
- justify-content: center;
+
+.buttons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
+
+body {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.button {
+    appearance: auto;
+    text-rendering: auto;
+    color: black;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+.button:active {
+    
+}
+.points{
+float:left;
+}
+a:hover{
+  background-color: aquamarine;
+}
+
+
+
+
+Maybe
+a:link{
+ color:orchid;
+  font-size: 18px;
+}
+a:viewed{
+  color:red;
+  
+}
+a:hover{
+  color:whitesmoke;
+  background-color:rebeccapurple;
+}
+a:active{
+  color:black;
+  background-color: orchid;
+}
+
