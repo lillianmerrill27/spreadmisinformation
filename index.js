@@ -40,28 +40,29 @@ function buttonClickHandler() {
         //countEl.textContent = count;
     }
 
-
+}
 
 function logAction() {
     let countStr = count + " - ";
     saveEl.textContent += countStr;
     //countEl.textContent = 0;
     count = 0;
+    console.log("logAction");
 }
-}
+
 
 
 
 
 
 var body = document.body;
-var hover_element = document.getElementById("hero_hover_animation");
+/* var hover_element = document.getElementById("hero_hover_animation");
 hover_element.addEventListener("mouseover", function () {
     body.style.backgroundColor = '#ffd66b'
 });
 hover_element.addEventListener("mouseout", function () {
     body.style.backgroundColor = '#fff';
-});
+}); */
 //const innerTextOutput = document.getElementById("innerTextOutput");
 //innerTextOutput.value = source.innerText;
 //const button = document.querySelector("button");
@@ -70,6 +71,4 @@ hover_element.addEventListener("mouseout", function () {
 //button.textContent = `Click count: ${event.detail}`;
 //count += 1;
 // });
-
-
 
