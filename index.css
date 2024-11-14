@@ -106,3 +106,26 @@ a:active{
 .h1{
     font-size: x-small;
 }
+
+
+a:link{
+ color:orchid;
+  font-size: 18px;
+}
+a:viewed{
+  color:red;
+ 
+}
+a:hover{
+  color:whitesmoke;
+  background-color:rebeccapurple;
+}
+a:active{
+  color:black;
+  background-color: orchid;
+}
+
+
+.h1{
+    font-size: x-small;
+}
