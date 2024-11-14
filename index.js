@@ -6,22 +6,30 @@ let saveEl = document.getElementById("save-el")
 //var linkElement = document.getElementById('https://google.com');
 //document.createElement('a')
 
+
 let count = 0
 
 function buttonClickHandler() {
 	let selection = Math.random()
+	if(selection <= 0.004) {
+		count = count + 500;
+	}
+	
 	if (selection <= 0.04) {
-		count = count + 5;
+		count = count + 25;
 		console.log("JACKPOT");
 		documentEl.innerText("JACKPOT");
 		countEl.textContent = count;
 		//linkElement.href = https://google.com;
 	}
-	else if (selection <= 0.09) {
-		count = count + 2;
+	if (selection <= 0.09) {
+		count = count + 5;
 		console.log("epic");
 		documentEl.innerText = ("epic");
 		countEl.textContent = count;
+	}
+	else if (selection <= 0.4) {
+		count = count + 3;
 	}
 	else {
 		count = count + 1
@@ -36,6 +44,38 @@ function logAction() {
 	saveEl.textContent += countStr;
 	countEl.textContent = 0;
 	count = 0;
+
+count = 0
+
+function buttonClickHandler() {
+if( Math.random() <= 0.04 ){
+   count = count + 5;
+   documentEl.innerText = ("JACKPOT");
+	console.log("JACKPOT");
+	countEl.textContent = count;
+//linkElement.href = https://google.com;
+
+}
+if( Math.random() <= 0.05 ){
+	count = count + 2;
+    console.log("epic");
+	 documentEl.innerText = ("epic");
+	countEl.textContent = count;
+}
+if( Math.random() >= 0.41 ){
+	count = count + 1
+    console.log("eh");			
+	documentEl.innertext = ("eh");
+	countEl.textContent = count;
+}
+}
+function buttonLog() {
+let countStr = count + " - ";
+	saveEl.textContent += countStr;
+	countEl.textContent = 0;
+	count = 0;
+}
+
 }
 var body = document.body;
 var hover_element = document.getElementById("hero_hover_animation");
