@@ -13,18 +13,18 @@ let count = 0
 
 function buttonClickHandler() {
     let selection = Math.random()
-    if(selection <= 0.004) {
+    else if(selection <= 0.004) {
         count = count + 500;
     }
    
-    if (selection <= 0.04) {
+    else if (selection <= 0.04) {
         count = count + 25;
         //console.log("JACKPOT");
         //documentEl.innerText("JACKPOT");
        // countEl.textContent = count;
         //linkElement.href = https://google.com;
     }
-    if (selection <= 0.09) {
+    else if (selection <= 0.09) {
         count = count + 5;
         //console.log("epic");
         //documentEl.innerText = ("epic");
@@ -71,4 +71,3 @@ hover_element.addEventListener("mouseout", function () {
 //button.textContent = `Click count: ${event.detail}`;
 //count += 1;
 // });
-
