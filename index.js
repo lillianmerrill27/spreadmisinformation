@@ -13,7 +13,7 @@ let count = 0
 
 function buttonClickHandler() {
     let selection = Math.random()
-    else if(selection <= 0.004) {
+     if(selection <= 0.004) {
         count = count + 500;
     }
    
