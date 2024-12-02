@@ -35,7 +35,7 @@ function buttonClickHandler() {
         count = count + 500;
     }
    
-    else if (selection <= 0.04) {
+    
     else if (selection <= 0.04) {
         count = count + 25;
         //console.log("JACKPOT");
@@ -43,7 +43,7 @@ function buttonClickHandler() {
        // countEl.textContent = count;
         //linkElement.href = https://google.com;
     }
-    else if (selection <= 0.09) {
+    
     else if (selection <= 0.09) {
         count = count + 5;
         //console.log("epic");
@@ -103,3 +103,4 @@ let initialNumber = 100;
 let addNumber = 100
 let theNumber = Number(prompt("Pick A Number Of Viruses"));
 window.confirm("Your number is the square root of " + (theNumber + addNumber) * initialNumber);
+alert("have some misinformation fun");
