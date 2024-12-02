@@ -1,84 +1,84 @@
 .btn1layout {
 
 
-    font-family: cursive;
-    font-size: 40px;
-    color: black;
-    border-color: rgb(224, 18, 18);
-    width: 200px;
-    height: 75px;
-    margin: 30px;
+  font-family: cursive;
+  font-size: 40px;
+  color: black;
+  border-color: rgb(224, 18, 18);
+  width: 200px;
+  height: 75px;
+  margin: 30px;
 }
-   .leekh1{
-    display:flex;
-    transform: translate(25px,15px);
-   }
+ .leekh1{
+  display:flex;
+  transform: translate(25px,15px);
+ }
 .leekh1{
-    font-size: 50px;
+  font-size: 50px;
 }
 .logo{
-    height: 100px;
-    display: flex;
-    float:left;
-    transform: translate(15px,15px);
-   
+  height: 100px;
+  display: flex;
+  float:left;
+  transform: translate(15px,15px);
+ 
 }
 .btn2layout {
 
 
-    border-color: blue;
-    color: blue;
-    width: 150px;
-    height: 50px;
-    margin: 25px;
+  border-color: blue;
+  color: blue;
+  width: 150px;
+  height: 50px;
+  margin: 25px;
 }
 
 
 .buttons {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 
 body {
-    transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 
 .button {
-    appearance: auto;
-    text-rendering: auto;
-    color: black;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    cursor: default;
-    box-sizing: border-box;
-    background-color: white;
-    margin: 0em;
-    padding-block: 1px;
-    padding-inline: 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
+  appearance: auto;
+  text-rendering: auto;
+  color: black;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 0em;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
 }
 
 
 .button:hover {
-    background-color: grey;
+  background-color: grey;
 }
 
 
 .button:active {
-  color: blueviolet;
+color: blueviolet;
 }
 .points{
 float:left;
@@ -86,46 +86,35 @@ float:left;
 
 
 a:link{
- color:orchid;
-  font-size: 18px;
+color:orchid;
+font-size: 18px;
 }
 a:viewed{
-  color:red;
- 
+color:red;
+
 }
 a:hover{
-  color:whitesmoke;
-  background-color:rebeccapurple;
+color:whitesmoke;
+background-color:rebeccapurple;
 }
 a:active{
-  color:black;
-  background-color: orchid;
+color:black;
+background-color: orchid;
 }
 
 
 .h1{
-    font-size: x-small;
+  font-size: x-small;
 }
 
 
-a:link{
- color:orchid;
-  font-size: 18px;
+html {
+          cursor: url("https://i.imgur.com/adEtC8N.png"), auto;
 }
-a:viewed{
-  color:red;
- 
-}
-a:hover{
-  color:whitesmoke;
-  background-color:rebeccapurple;
-}
-a:active{
-  color:black;
-  background-color: orchid;
-}
+.btn1layout { 
+cursor: url("https://i.imgur.com/YGjBSfa.png"), auto;
 
-
-.h1{
-    font-size: x-small;
+}
+.btn2layout {
+cursor: url("https://i.imgur.com/qAFNfzL.png"), auto;
 }
