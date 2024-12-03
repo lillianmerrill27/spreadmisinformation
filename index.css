@@ -78,7 +78,7 @@ body {
 
 
 .button:active {
-color: blueviolet;
+color: rgb(147, 117, 182);
 }
 .points{
 float:left;
@@ -86,20 +86,20 @@ float:left;
 
 
 a:link{
-color:orchid;
+color:rgb(65, 29, 99);
 font-size: 18px;
 }
 a:viewed{
-color:red;
+color:rgb(172, 107, 185);
 
 }
 a:hover{
 color:whitesmoke;
-background-color:rebeccapurple;
+background-color:rgb(65, 29, 99);
 }
 a:active{
 color:black;
-background-color: orchid;
+background-color: rgb(172, 107, 185);
 }
 
 

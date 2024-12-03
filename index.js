@@ -1,3 +1,5 @@
+//ray js code here
+
 let buttonClick = document.getElementById("clickmebtn1")
 let buttonLog = document.getElementById("log-rolls")
 let countEl = document.getElementById("count-el")
