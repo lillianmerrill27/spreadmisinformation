@@ -9,5 +9,5 @@ let votes = 0
 
 function votes() {
     votesEl1 = votesEl1 + 1
-    votesEl1.innerText = votes
+    votesEl1.textContent = votes
 }
