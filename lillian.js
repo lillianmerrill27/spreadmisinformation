@@ -1,13 +1,13 @@
 //lillian js code here
 // goal = voting system for the Shaming
 
-let votesEl1 = document.getElementById("votes-el1")
+let countEl = document.getElementById("count-el")
 
-console.log(votesEl1)
+console.log(countEl)
 
-let votes = 0
+let count = 0
 
-function votes() {
-    votesEl1 = votesEl1 + 1
-    votesEl1.textContent = votes
+function increment() {
+    count = count + 1
+    countEl.innerText = count
 }
