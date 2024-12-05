@@ -7,7 +7,7 @@ console.log(votesEl1)
 
 let votes = 0
 
-function vote() {
+function votes() {
     votesEl1 = votesEl1 + 1
     votesEl1.innerText = votes
 }
