@@ -5,4 +5,4 @@ function getRandomInt(){
     let luckyNumber = Math.random()
 }
 console.log(luckyNumber)
-let storyOne.textContent = luckyNumber
+storyOne.textContent = luckyNumber
