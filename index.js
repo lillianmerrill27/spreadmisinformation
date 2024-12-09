@@ -1,3 +1,5 @@
+//ray js code here
+
 let buttonClick = document.getElementById("clickmebtn1")
 let buttonLog = document.getElementById("log-rolls")
 let countEl = document.getElementById("count-el")
@@ -8,15 +10,34 @@ let saveEl = document.getElementById("save-el")
 
 
 
+
+
+
+
 let count = 0
+
+
 
 
 function buttonClickHandler() {
     let selection = Math.random()
-     if(selection <= 0.004) {
+     if(selection <= 0.00001){
+     count = count + 250000000;
+     } 
+     else if(selection <= 0.0001){
+     count = count + 2500000;
+     }
+     else if(selection <= 0.001){
+     count = count + 250000;
+     }
+     else if(selection <= 0.003){
+     count = count + 50000;
+     }
+     else if(selection <= 0.004) {
         count = count + 500;
     }
    
+    
     else if (selection <= 0.04) {
         count = count + 25;
         //console.log("JACKPOT");
@@ -24,6 +45,7 @@ function buttonClickHandler() {
        // countEl.textContent = count;
         //linkElement.href = https://google.com;
     }
+    
     else if (selection <= 0.09) {
         count = count + 5;
         //console.log("epic");
@@ -40,15 +62,23 @@ function buttonClickHandler() {
         //countEl.textContent = count;
     }
 
+countEl.textContent = count
 }
+
 
 function logAction() {
     let countStr = count + " - ";
     saveEl.textContent += countStr;
     //countEl.textContent = 0;
     count = 0;
-    console.log("logAction");
+    countEl.textContent = 0
 }
+
+
+
+
+
+
 
 
 
@@ -71,3 +101,8 @@ hover_element.addEventListener("mouseout", function () {
 //button.textContent = `Click count: ${event.detail}`;
 //count += 1;
 // });
+let initialNumber = 100;
+let addNumber = 100
+let theNumber = Number(prompt("Pick A Number Of Viruses"));
+window.confirm("Your number is the square root of " + (theNumber + addNumber) * initialNumber);
+alert("have some misinformation fun");
