@@ -86,7 +86,7 @@ float:left;
 
 
 a:link{
- color:orchid;
+ color:rgb(105, 0, 102);
   font-size: 18px;
 }
 a:viewed{
@@ -99,7 +99,7 @@ a:hover{
 }
 a:active{
   color:black;
-  background-color: orchid;
+  background-color: rgb(46, 0, 44);
 }
 
 
@@ -109,7 +109,7 @@ a:active{
 
 
 a:link{
- color:orchid;
+ color:rgb(85, 5, 82);
   font-size: 18px;
 }
 a:viewed{
@@ -122,10 +122,13 @@ a:hover{
 }
 a:active{
   color:black;
-  background-color: orchid;
+  background-color: rgb(54, 0, 53);
 }
 
 
 .h1{
     font-size: x-small;
+}
+html {
+  cursor: url("https://i.imgur.com/8Jhi9oS.png"), auto;
 }
