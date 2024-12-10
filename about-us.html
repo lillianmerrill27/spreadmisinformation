@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>The Leek</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"/>
-    
+    <link rel="stylesheet" href="index.css" />
+
 </head>
 
 <body>
- <script src="lillian.js"></script>
+
     <h1>About Us</h1>
-        <!-- buttons to other pages-->
+    <!-- buttons to other pages-->
     <div class="topbuttons">
         <a href="index.html" class="button home-page">Home</a>
         <a href="political.html" class="button political-page"> Political </a>
@@ -22,32 +23,33 @@
     </div>
 
     <h2>Meet the team!</h2>
-        <div class="teamlist">
-            <div class="lillianprofile">
-                <p>Lillian the Terrible</p>
-                <h3 id="vote-el"> 0 </h3>
-                <button id="vote-lil" onclick="votes()"> VOTE </button>
-                <script src="lillian.js"></script>
-            </div>
-
-            <div class="nikkiprofile">
-                <p>Nikki Nikkiton "the Nikotine"</p>
-                <h3 id="votes-el2"> 0 </h3>
-                <button id="vote-nik"onclick="votes()"> VOTE </button>
-            </div>
-
-            <div class="rayprofile">
-                <p>Ray of Sunshine</p>
-                <h3 id="votes-el3"> 0 </h3>
-                <button id="vote-ray" onclick="votes()"> VOTE </button>
-            </div>
-
-            <div class="viviprofile">
-                <p>Vivi Van-Luf the III</p>
-                <h3 id="votes-el4"> 0 </h3>
-                <button id="vote-viv"onclick="votes()"> VOTE </button>
-            </div>
-
+    <div class="teamlist">
+        <div class="lillianprofile">
+            <p>Lillian the Terrible</p>
+            <h3 id="lillian-vote-el">0</h3>
+            <button id="vote-lil" onclick="votes('lillian')"> VOTE </button>
         </div>
+
+        <div class="nikkiprofile">
+            <p>Nikki Nikkiton "the Nikotine"</p>
+            <h3 id="nikki-vote-el"> 0 </h3>
+            <button id="vote-nik" onclick="votes('nikki')"> VOTE </button>
+        </div>
+
+        <div class="rayprofile">
+            <p>Ray of Sunshine</p>
+            <h3 id="ray-vote-el"> 0 </h3>
+            <button id="vote-ray" onclick="votes('ray')"> VOTE </button>
+        </div>
+
+        <div class="viviprofile">
+            <p>Vivi Van-Luf the III</p>
+            <h3 id="vivi-vote-el"> 0 </h3>
+            <button id="vote-viv" onclick="votes('vivi')"> VOTE </button>
+        </div>
+
+    </div>
+    <script src="lillian.js"></script>
 </body>
+
 </html>
