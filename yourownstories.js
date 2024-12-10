@@ -22,3 +22,5 @@ function getRandomInt(){
     else
         storyOne.textContent =  yourName + " Proposes Mandatory Naptime to Boost National Productivity"
 }
+getRandomInt()
+
