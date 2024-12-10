@@ -9,15 +9,15 @@ function getRandomInt(){
   yourNumber.textContent += Math.floor (Math.random()*100)
     if (luckyNumber == 7 )
         storyOne.textContent = yourName + " Vows to Fix the Economy by Printing More Monopoly Money"
-    if (luckyNumber == 6)
+    else if (luckyNumber == 6)
         storyOne.textContent = "Trump Appoints " + yourName + " as New Secretary of AI Ethics in Cabinet, Immediately Asks ChatGPT for Policy Advice"
-    if (luckyNumber == 5)
+    else if (luckyNumber == 5)
         storyOne.textContent = "Breaking: " + yourName + " Brokers Peace Deal by Suggesting World Leaders Play 'Among Us'"
-    if (luckyNumber == 4)
+    else if (luckyNumber == 4)
         storyOne.textContent = yourName + " Accidentally Declares War on Mars During Zoom Meeting"
-    if (luckyNumber == 3)
+    else if (luckyNumber == 3)
         storyOne.textContent = "War Breaks Out After " + yourName + " Suggests Replacing United Nations Meetings with Group Chats"
-    if (luckyNumber == 2)
+    else if (luckyNumber == 2)
         storyOne.textContent = "Scandel: " + yourName + " Caught Smuggling Maple Syrup Across Canadian Border"
     else
         storyOne.textContent =  yourName + " Proposes Mandatory Naptime to Boost National Productivity"
