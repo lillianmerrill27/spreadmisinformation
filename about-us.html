@@ -24,7 +24,7 @@
         <a href="about-us.html" class="button about-us-page">About Us</a>
     </div>
 
-    <h2>Meet the team!</h2>
+<!--    <h2>Meet the team!</h2>
     <div class="teamlist">
         <div class="lillianprofile">
             <p>Lillian the Terrible</p>
@@ -51,6 +51,44 @@
         </div>
             <p> We encourage voter fraud!</p>
     </div>
+-->
+
+    <h2> Meet the team!</h2>
+        <div class="lillian-profile"> 
+            <p>Lillian the Terrible - <span id="lillian-counts">0</span></p>
+                <!-- image -->
+        </div>
+<!--   ---------------------------------------------   -->
+        <div class="nikki-profile">
+            <p>Nikki Nikkiton "the Nikotine"- <span id="nikki-counts">0</span></p>
+                <!-- image -->
+        </div>
+<!--   ---------------------------------------------   -->
+        <div class="ray-profile">
+            <p>Ray of Sunshine - <span id="ray-counts">0</span></p>
+                <!-- image -->
+        </div>
+<!--   ---------------------------------------------   -->
+        <div class="vivi-profile">
+            <p>Vivi Van-Luf the III - <span id="vivi-counts">0</span></p>
+                <!-- image -->
+        </div>
+            
+    <h2>Which one of us do you want to Shame?</h2>
+    <h2>Vote now!</h2>
+        <input id="email" autocomplete="on"> <br>
+            <!--your vote-->
+        <select id="vote" >
+            <option value="lillian-vote-el">Lillian the Terrible</option>
+            <option value="nikki-vote-el">Nikki Nikkiton "the Nikotine"</option>
+            <option value="ray-vote-el">Ray of Sunshine</option>
+            <option value="vivi-vote-el">Vivi Van-Luf the III</option>
+        </select>
+            <br>
+        <button onclick="submitVote()">Submit</button>
+
+
+
     <script src="lillian.js"></script>
 </body>
 
