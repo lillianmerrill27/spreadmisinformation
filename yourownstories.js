@@ -10,7 +10,7 @@ function getRandomInt(){
     if (luckyNumber == 7 )
         storyOne.textContent = yourName + " Vows to Fix the Economy by Printing More Monopoly Money"
     else if (luckyNumber == 6)
-        storyOne.textContent = "Trump Appoints " + yourName + " as New Secretary of AI Ethics in Cabinet, Immediately Asks ChatGPT for Policy Advice"
+        storyOne.textContent = "Trump Appoints " + yourName + " as New AI Czar Cabinet, Immediately Asks ChatGPT for Policy Advice, and is now moving toward world domination"
     else if (luckyNumber == 5)
         storyOne.textContent = "Breaking: " + yourName + " Brokers Peace Deal by Suggesting World Leaders Play 'Among Us'"
     else if (luckyNumber == 4)
