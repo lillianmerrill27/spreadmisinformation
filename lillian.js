@@ -107,7 +107,7 @@ function updateResults() {
             counts[vote]++;
         }
     }
-    
+
     // Update display
     document.getElementById("lillian-counts").innerText = counts["Lillian"];
     document.getElementById("nikki-counts").innerText = counts["Nikki"];
@@ -121,9 +121,10 @@ function updateResults() {
         if (counts[key] > max){
            max = counts[key]
            max_key = key
-        console.log(max_key + " " + max)
-        document.getElementById("winner-img").src = "images/" + max_key + ".jpg"
-        console.log(Math.max(...Object.values(counts)));   }
+        
+            console.log(max_key + " " + max)
+            document.getElementById("winner-img").src = "images/" + max_key + ".jpg"
+            console.log(Math.max(...Object.values(counts)));   }
         }
 
     
