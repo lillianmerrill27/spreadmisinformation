@@ -107,12 +107,26 @@ function updateResults() {
             counts[vote]++;
         }
     }
-
+    
     // Update display
     document.getElementById("lillian-counts").innerText = counts["Lillian"];
     document.getElementById("nikki-counts").innerText = counts["Nikki"];
     document.getElementById("ray-counts").innerText = counts["Ray"];
     document.getElementById("vivi-counts").innerText = counts["Vivi"];
+
+    let max_key = ""
+    let max = -1
+
+        for (let key in counts){
+        if (counts[key] > max){
+           max = counts[key]
+           max_key = key
+        console.log(max_key + " " + max)
+        document.getElementById("winner-img").src = "images/" + max_key + ".jpg"
+        console.log(Math.max(...Object.values(counts)));   }
+        }
+
+    
 }
 
 // Helper function to map <option> values to counts keys
@@ -125,6 +139,13 @@ function mapVoteToKey(value) {
         default: return null;
     }
 }
+
+console.log(max_key + " " + max)
+document.getElementById("winner-img").src = "images/" + max_key + ".jpg"
+console.log(Math.max(...Object.values(counts)));
+
+// if lillian bigger
+
 
 // Update results on page load
 updateResults();
