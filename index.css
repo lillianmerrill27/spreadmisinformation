@@ -121,3 +121,16 @@ cursor: url("https://i.imgur.com/qAFNfzL.png"), auto;
 html {
   cursor: url("https://i.imgur.com/8Jhi9oS.png"), auto;
 }
+
+.winner-img {
+
+
+  height: 200px;
+  border-width: 10px ;
+  border-radius: 3px ;
+  border-color: rgb(56, 55, 95);
+  margin: 5px;
+  font-size: 18px; 
+ }
+ 
+ 

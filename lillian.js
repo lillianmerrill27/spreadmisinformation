@@ -129,12 +129,12 @@ function updateResults() {
             
         if (max_key) {
             console.log(max_key + " " + max)
-            document.getElementById("winner-img").src = "images/" + max_key + ".jpg"
+            document.getElementById("winner-img").src = "images/" + max_key + ".png"
             console.log(Math.max(...Object.values(counts)));  
             document.getElementById("winner").innerText=(max_key + "is the weekly victim of the Shaming!")
         } else {
             // No votes 
-            document.getElementById("winner-img").src="images/default.jpg";
+            document.getElementById("winner-img").src="images/default.png";
             document.getElementById("winner").innerText="No votes have been cast yet. Get to work swine."
         }
 }
