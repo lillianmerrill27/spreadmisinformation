@@ -19,30 +19,30 @@
 //    let vote = document.getElementById("vote").value;
 
 //    counts[vote] = counts[vote] + 1
-     
 
-    // check if email has voted
+
+// check if email has voted
 //    if(localStorage.getItem(email)){
 //        alert("You already used that email. Fraud better.");
 //   }   else{
-        // Store votes
+// Store votes
 //        localStorage.setItem(email, vote);
 //        alert("Your vote has been casted to the chambers.");
 //        updateResults();
 //        }
-   // check if email is empty 
+// check if email is empty 
 
 //    if(localStorage.getItem(email === "")){
 //        alert("Use an email nimwit")
 //    }
-    
-    
+
+
 //updateResults();
 //}   
 
 //function updateResults() {
 
-    // count votes
+// count votes
 //    for (let i = 0; i < localStorage.length; i++){
 //        let key = localStorage.key(i);
 //        let vote = localStorage.getItem(key);
@@ -51,7 +51,7 @@
 //        }
 //    }
 
-    // update display
+// update display
 //    document.getElementById("lillian-counts").innerText = counts["lillian-vote-el"]; 
 //    document.getElementById("nikki-counts").innerText = counts["nikki-vote-el"]; 
 //    document.getElementById("ray-counts").innerText = counts["ray-vote-el"]; 
@@ -109,34 +109,39 @@ function updateResults() {
     }
 
     // Update display
-    document.getElementById("lillian-counts").innerText = counts["Lillian"];
-    document.getElementById("nikki-counts").innerText = counts["Nikki"];
-    document.getElementById("ray-counts").innerText = counts["Ray"];
-    document.getElementById("vivi-counts").innerText = counts["Vivi"];
-
+    if (document.getElementById("vote")) {
+        document.getElementById("lillian-counts").innerText = counts["Lillian"];
+        document.getElementById("nikki-counts").innerText = counts["Nikki"];
+        document.getElementById("ray-counts").innerText = counts["Ray"];
+        document.getElementById("vivi-counts").innerText = counts["Vivi"];
+    }
 
     //Find winner
     let max_key = "";
     let max = -1;
 
-        for (let key in counts){
-            if (counts[key] > max){
-                max = counts[key];
-                max_key = key
-        
-             }
+    for (let key in counts) {
+        if (counts[key] > max) {
+            max = counts[key];
+            max_key = key
+
         }
-            
+    }
+    let winnerImgEl = document.getElementById("winner-img")
+    if (winnerImgEl) {
         if (max_key) {
             console.log(max_key + " " + max)
-            document.getElementById("winner-img").src = "images/" + max_key + ".png"
-            console.log(Math.max(...Object.values(counts)));  
-            document.getElementById("winner").innerText=(max_key + "is the weekly victim of the Shaming!")
+            winnerImgEl.src = max_key + ".png"
+            console.log(Math.max(...Object.values(counts)));
+            document.getElementById("winner").innerText = (max_key + " is the weekly victim of the Shaming!")
         } else {
             // No votes 
-            document.getElementById("winner-img").src="images/default.png";
-            document.getElementById("winner").innerText="No votes have been cast yet. Get to work swine."
+            winnerImgEl.src = "default.png";
+            document.getElementById("winner").innerText = "No votes have been cast yet. Get to work swine."
         }
+    }
+
+
 }
 
 // Helper function to map <option> values to counts keys
@@ -149,13 +154,8 @@ function mapVoteToKey(value) {
         default: return null;
     }
 }
-
-console.log(max_key + " " + max)
-document.getElementById("winner-img").src = "images/" + max_key + ".jpg"
-console.log(Math.max(...Object.values(counts)));
-
 // if lillian bigger
 
 
 // Update results on page load
-window.onload = updateResults();
+updateResults();
